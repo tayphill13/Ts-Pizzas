@@ -13,12 +13,15 @@ Pizza.prototype.sizePrice = function(size) {
 }
 
 Pizza.prototype.toppingsPrice = function(toppings) {
-  if (toppings === "pepperoni")  {
+  if (toppings !== "pepperoni" || "pineapple")  {
+    return this.price;
+  } else if (toppings === "pineapple")  {
     this.price += 2;
-  } else if (toppings === "pepperoni" || toppings === "pineapple")  {
+  } else if (toppings === "pepperoni" && toppings === "pineapple")  {
+    this.price += 4;
+  } else if (toppings === "pepperoni")  {
     this.price += 2;
   }
-  console.log(this.price);
 }
 Pizza.prototype.total = function() {
   let total = this.price;
@@ -32,11 +35,16 @@ $(document).ready(function()  {
     event.preventDefault();
     let newOrder = new Pizza();
     let size = $("#pizzaSize").val();
-    let pepToppings = $("#toppings1").val();
-    let pineappleToppings = $("#toppings2").val();
+    let pepperoniTopping = $("#toppings1").val();
+    let pineappleTopping = $("#toppings2").val();
     newOrder.sizePrice(size);
-    newOrder.toppingsPrice(pepToppings);
-    newOrder.toppingsPrice(pineappleToppings);
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      let addedToppings = $(this).val();
+      newOrder.toppingsPrice(addedToppings);
+      console.log(addedToppings)
+    });
+    newOrder.toppingsPrice(pepperoniTopping);
+    newOrder.toppingsPrice(pineappleTopping);
     orderTotalPrice = newOrder.total();
     
     $("#order-output").text("$ " + orderTotalPrice + " pizza is hot and ready!");
