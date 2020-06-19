@@ -31,6 +31,7 @@ Pizza.prototype.total = function() {
 // User Interface
 $(document).ready(function()  {
   $("#orderForm").submit(function(event) {
+    $('#orderUp').show();
     event.preventDefault();
     let newOrder = new Pizza();
     let size = $("#pizzaSize").val();
@@ -41,13 +42,11 @@ $(document).ready(function()  {
     $("input:checkbox[name=toppings]:checked").each(function() {
       let addedToppings = $(this).val();
       newOrder.toppingsPrice(addedToppings);
-      console.log(addedToppings)
     });
     newOrder.toppingsPrice(pepperoniTopping);
     newOrder.toppingsPrice(pineappleTopping);
     newOrder.toppingsPrice(peppersTopping);
     orderTotalPrice = newOrder.total();
-    
     $("#order-output").text("$" + orderTotalPrice + " " + size + " pizza is hot and ready!");
   });
   })
