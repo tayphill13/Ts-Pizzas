@@ -1,18 +1,18 @@
 // Business Logic
-function PizzaOrder()  {
+function Pizza()  {
   this.price = 0;
 }
-PizzaOrder.prototype.sizePrice = function(size) {
+Pizza.prototype.sizePrice = function(size) {
   if  (size === "small")  {
     this.price += 6;
   }
 }
-PizzaOrder.prototype.toppingsPrice = function(toppings) {
+Pizza.prototype.toppingsPrice = function(toppings) {
   if (toppings === "pepperoni")  {
     this.price += 3;
   }
 }
-PizzaOrder.prototype.total = function() {
+Pizza.prototype.total = function() {
   let total = this.price;
   return total;
 }
@@ -27,11 +27,11 @@ $(document).ready(function()  {
     event.preventDefault();
     let size = $("#pizzaSize").val();
     let toppings = $("#pizzaToppings").val();
-    let newOrder = new PizzaOrder();
-    PizzaOrder.sizePrice(size);
-    PizzaOrder.toppingsPrice(toppings);
+    let newOrder = new Pizza();
+    Pizza.sizePrice(size);
+    Pizza.toppingsPrice(toppings);
     let orderTotalPrice = newOrder.total();
     $("#order-output").text(orderTotalPrice);
-    $("div.panel").show();
+    });
   })
 })

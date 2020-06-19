@@ -1,7 +1,7 @@
 .panel {
   background-color: rgb(160, 160, 255);
-  display: none;
+  color: darkgreen;
 }
-body{
+body  {
   background-color: tan;
 }
