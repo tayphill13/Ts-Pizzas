@@ -13,8 +13,8 @@ _This is an application where the user can build a pizza by choosing their toppi
 * _Install Git Bash_
 * _Using a Terminal on desktop, user will need to type git init_
 * _go to this repository and clone then Open in Desktop_
-* _Will likely need Git for Desktop which can be found here: https://help.github.com/en/desktop/getting-started-with-github-desktop/installing-github-desktop_
-* _Clone file to desktop from repo on github_
+* _Will likely need Git for Desktop which can be found here: <https://help.github.com/en/desktop/getting-started-with-github-desktop/installing-github-desktop>_
+* _Clone file to desktop from repo on github here <https://github.com/tayphill13/Ts-Pizzas.git>_
 * _run index.html with web browser_
 * _Other option is to go to Repository on git hub and download zip_
 * _Retrieve zip file in downloads on computer and double click to unpack_
@@ -27,12 +27,12 @@ _This is an application where the user can build a pizza by choosing their toppi
 | :-------: | :---: | :-----: |
 | 1. User is able to select their size of pizza  | "Small"  |   No Output, yet  |
 | 2. User can select one of more toppings   |   "Pineapple, Pepperoni"    |     No output, yet   |
-| 3. When User submits order, the order will be displayed   |  (clicks) submit button   |   "11 dollar, Small, Pepperoni, Pineapple Pizza"  |
+| 3. When User submits order, the order will be displayed   |  (clicks) submit button   |   "11 dollar, Small Pizza is ready"  |
 
 
 ## Known Bugs
 
-_At this time, the toppings is not effecting the price of the pizza.  Price is solely determined by size selected_
+_The price for the size of pizza is not coming back as the expected value-- although still reasonably priced_
 
 ## Support and contact details
 
