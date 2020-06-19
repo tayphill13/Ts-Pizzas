@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an application where the user can build a pizza by choosing their toppings and size.  When the user submits their order, it will return the price and type of pizza they have ordered.  This project was meant to demonstrate our use of objects, constructors and writing specs._
+_This is an application where the user can build a pizza by choosing their toppings and size.  When the user submits their order, it will return the price of the pizza they have ordered.  This project was meant to demonstrate our use of objects, constructors and writing specs._
 
 ## Setup/Installation Requirements
 
@@ -28,11 +28,11 @@ _This is an application where the user can build a pizza by choosing their toppi
 | 1. User is able to select their size of pizza  | "Small"  |   No Output, yet  |
 | 2. User can select one of more toppings   |   "Pineapple, Pepperoni"    |     No output, yet   |
 | 3. When User submits order, the order will be displayed   |  (clicks) submit button   |   "11 dollar, Small, Pepperoni, Pineapple Pizza"  |
-| 4.     |     |      |
+
 
 ## Known Bugs
 
-_There are no known bugs_
+_At this time, the toppings is not effecting the price of the pizza.  Price is solely determined by size selected_
 
 ## Support and contact details
 

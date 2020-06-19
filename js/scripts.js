@@ -35,8 +35,9 @@ $(document).ready(function()  {
     event.preventDefault();
     let newOrder = new Pizza();
     let size = $("#pizzaSize").val();
-    let pepperoniTopping = $("#toppings1").val();
-    let pineappleTopping = $("#toppings2").val();
+    let pepperoniTopping = $("#pepperoni").val();
+    let pineappleTopping = $("#pineapple").val();
+    let peppersTopping = $("#peppers").val();
     newOrder.sizePrice(size);
     $("input:checkbox[name=toppings]:checked").each(function() {
       let addedToppings = $(this).val();
@@ -45,6 +46,7 @@ $(document).ready(function()  {
     });
     newOrder.toppingsPrice(pepperoniTopping);
     newOrder.toppingsPrice(pineappleTopping);
+    newOrder.toppingsPrice(peppersTopping);
     orderTotalPrice = newOrder.total();
     
     $("#order-output").text("$ " + orderTotalPrice + " pizza is hot and ready!");
