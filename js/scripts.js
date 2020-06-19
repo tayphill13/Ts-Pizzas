@@ -1,6 +1,5 @@
 // Business Logic
 function Pizza()  {
-  this.toppings = [];
   this.price = 0;
 }
 Pizza.prototype.sizePrice = function(size) {
@@ -14,8 +13,8 @@ Pizza.prototype.sizePrice = function(size) {
 }
 
 Pizza.prototype.toppingsPrice = function(toppings) {
-  if (toppings === "pepperoni" && toppings === "pineapple")  {
-    this.price += 4;
+  if (toppings === "pepperoni")  {
+    this.price += 2;
   } else if (toppings === "pepperoni" || toppings === "pineapple")  {
     this.price += 2;
   }
@@ -25,9 +24,6 @@ Pizza.prototype.total = function() {
   let total = this.price;
   return total;
 }
-// PizzaOrder.prototype.orderUp = function()  {
-//   return this.size + this.toppings + " is ready!";
-// }
 
 
 // User Interface
@@ -36,9 +32,11 @@ $(document).ready(function()  {
     event.preventDefault();
     let newOrder = new Pizza();
     let size = $("#pizzaSize").val();
-    let toppings = $("#toppings").val();
+    let pepToppings = $("#toppings1").val();
+    let pineappleToppings = $("#toppings2").val();
     newOrder.sizePrice(size);
-    newOrder.toppingsPrice(toppings);
+    newOrder.toppingsPrice(pepToppings);
+    newOrder.toppingsPrice(pineappleToppings);
     orderTotalPrice = newOrder.total();
     
     $("#order-output").text("$ " + orderTotalPrice + " pizza is hot and ready!");

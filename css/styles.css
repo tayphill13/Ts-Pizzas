@@ -6,7 +6,11 @@ body  {
   background-image: url("https://cdn.hipwallpaper.com/i/44/77/4DGP2X.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: rgb(143, 131, 131);
+}
+h2{
   color: white;
+  text-shadow:  2px 2px 8px rgb(32, 32, 32);
 }
 h1  {
   color: rgb(208, 255, 0);
@@ -14,6 +18,18 @@ h1  {
   font-family: Arial;
   text-shadow:  2px 2px 8px rgb(32, 32, 32);
 }
+h3  {
+  color: white;
+  text-shadow:  2px 2px 8px rgb(32, 32, 32);
+}
+.form-group {
+  color: black;
+  text-shadow:  2px 2px 8px rgb(252, 250, 250);
+}
 button  {
+  color: black;
+  box-shadow: 1px 2px 3px rgb(85, 85, 85);
+}
+#small {
   color: black;
 }
