@@ -41,6 +41,6 @@ $(document).ready(function()  {
     newOrder.toppingsPrice(toppings);
     orderTotalPrice = newOrder.total();
     
-    $("#order-output").text(orderTotalPrice);
+    $("#order-output").text("$ " + orderTotalPrice + " pizza is hot and ready!");
   });
   })
