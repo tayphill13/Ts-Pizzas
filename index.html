@@ -18,14 +18,21 @@
           <h2>Choose your Pizza:</h2>
           <form id="orderForm">
             <div class="form-group">
-              <label for="size">Choose a Size:</label>
-              <select id="size" required>
+              <label for="pizzaSize">Choose a Size:</label>
+              <select id="pizzaSize" required>
                 <option disabled selected value> Select a Size </option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
               </select><br>
-              
+              <label for="pizzaToppings">Choose some toppings</label>
+                <input type="checkbox" id="topping1" name="topping1" value="Pepperoni">
+                <label for="topping1">Pepperoni</label>
+                <input type="checkbox" id="topping2" name="topping2" value="Pineapple">
+                <label for="topping2">Pineapple</label>
+                <input type="checkbox" id="topping3" name="topping3" value="Peppers">
+                <label for="topping3">Peppers</label>
+                <button id="submit-btn">Submit Order</button>
             </div>
           </form>
         </div>
