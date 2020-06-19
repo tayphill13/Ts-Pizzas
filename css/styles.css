@@ -1,5 +1,6 @@
 .panel {
   background-color: rgb(160, 160, 255);
+  display: none;
 }
 body{
   background-color: tan;

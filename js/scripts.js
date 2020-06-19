@@ -26,9 +26,12 @@ $(document).ready(function()  {
   $("form#orderForm").submit(function(event) {
     event.preventDefault();
     let size = $("#pizzaSize").val();
+    let toppings = $("#pizzaToppings").val();
     let newOrder = new PizzaOrder();
     PizzaOrder.sizePrice(size);
+    PizzaOrder.toppingsPrice(toppings);
     let orderTotalPrice = newOrder.total();
     $("#order-output").text(orderTotalPrice);
+    $("div.panel").show();
   })
 })
