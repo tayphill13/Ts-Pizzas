@@ -19,18 +19,18 @@
           <form id="orderForm">
             <div class="form-group">
               <label for="pizzaSize">Choose a Size:</label>
-              <select id="pizzaSize" required>
+              <select id="pizzaSize">
                 <option disabled selected value> Select a Size </option>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
+                <option id="small" value="6">Small</option>
+                <option id="medium" value="8">Medium</option>
+                <option id="large" value="10">Large</option>
               </select><br>
               <label id="toppings" for="pizzaToppings">Choose some toppings</label>
-                <input type="checkbox" id="topping1" name="topping" value="Pepperoni">
+                <input type="checkbox" id="topping1" name="topping" value="3">
                 <label for="topping1">Pepperoni</label>
-                <input type="checkbox" id="topping2" name="topping" value="Pineapple">
+                <input type="checkbox" id="topping2" name="topping" value="2">
                 <label for="topping2">Pineapple</label>
-                <input type="checkbox" id="topping3" name="topping" value="Peppers">
+                <input type="checkbox" id="topping3" name="topping" value="1">
                 <label for="topping3">Peppers</label>
                 <button id="submit-btn">Submit Order</button>
             </div>
