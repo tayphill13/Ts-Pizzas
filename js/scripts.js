@@ -1,5 +1,6 @@
 // Business Logic
 function Pizza()  {
+  this.toppings = [];
   this.price = 0;
 }
 Pizza.prototype.sizePrice = function(size) {
@@ -37,6 +38,7 @@ $(document).ready(function()  {
     let size = $("#pizzaSize").val();
     let toppings = $("#toppings").val();
     newOrder.sizePrice(size);
+    newOrder.toppingsPrice(toppings);
     orderTotalPrice = newOrder.total();
     
     $("#order-output").text(orderTotalPrice);

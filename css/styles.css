@@ -3,5 +3,17 @@
   color: darkgreen;
 }
 body  {
-  background-color: tan;
+  background-image: url("https://cdn.hipwallpaper.com/i/44/77/4DGP2X.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+h1  {
+  color: rgb(208, 255, 0);
+  font-size: 4em;
+  font-family: Arial;
+  text-shadow:  2px 2px 8px rgb(32, 32, 32);
+}
+button  {
+  color: black;
 }
