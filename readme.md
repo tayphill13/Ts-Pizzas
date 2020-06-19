@@ -25,9 +25,9 @@ _This is an application where the user can build a pizza by choosing their toppi
 
 | Behavior  | Input | Output  |
 | :-------: | :---: | :-----: |
-| 1. User is able to select their size of pizza  | "Large"  |   Large   |
-| 2. User can select one of more toppings   |   "Pineapple, Pepperoni"    |     Pinepple, Pepperoni    |
-| 3. When User submits order, the order will be displayed   |  (clicks) submit button   |   "15 dollar Large, Pepperoni, Pineapple Pizza"  |
+| 1. User is able to select their size of pizza  | "Small"  |   No Output, yet  |
+| 2. User can select one of more toppings   |   "Pineapple, Pepperoni"    |     No output, yet   |
+| 3. When User submits order, the order will be displayed   |  (clicks) submit button   |   "11 dollar, Small, Pepperoni, Pineapple Pizza"  |
 | 4.     |     |      |
 
 ## Known Bugs
