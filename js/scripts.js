@@ -9,17 +9,16 @@ Pizza.prototype.sizePrice = function(size) {
     this.price += 8;
   } else if (size === "large")  {
     this.price += 10;
-  } return this.price;
+  } 
+  return this.price;
 }
 
 Pizza.prototype.toppingsPrice = function(toppings) {
-  if (toppings !== "pepperoni" || "pineapple")  {
-    return this.price;
+  if (toppings === "pepperoni") {
+    this.price += 3;
+  } else if (toppings === "peppers")  {
+    this.price += 1;
   } else if (toppings === "pineapple")  {
-    this.price += 2;
-  } else if (toppings === "pepperoni" && toppings === "pineapple")  {
-    this.price += 4;
-  } else if (toppings === "pepperoni")  {
     this.price += 2;
   }
 }
@@ -49,6 +48,6 @@ $(document).ready(function()  {
     newOrder.toppingsPrice(peppersTopping);
     orderTotalPrice = newOrder.total();
     
-    $("#order-output").text("$ " + orderTotalPrice + " pizza is hot and ready!");
+    $("#order-output").text("$" + orderTotalPrice + " " + size + " pizza is hot and ready!");
   });
   })
