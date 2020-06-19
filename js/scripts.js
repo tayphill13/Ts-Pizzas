@@ -3,14 +3,16 @@ function Pizza()  {
   this.price = 0;
 }
 Pizza.prototype.sizePrice = function(size) {
-  if  (size === "small")  {
+  if  (size == "small")  {
     this.price += 6;
   }
+  console.log(this.price);
 }
 Pizza.prototype.toppingsPrice = function(toppings) {
-  if (toppings === "pepperoni")  {
+  if (toppings == "3")  {
     this.price += 3;
   }
+  console.log(this.price);
 }
 Pizza.prototype.total = function() {
   let total = this.price;
@@ -23,15 +25,14 @@ Pizza.prototype.total = function() {
 
 // User Interface
 $(document).ready(function()  {
-  $("form#orderForm").submit(function(event) {
+  $("#orderForm").submit(function(event) {
     event.preventDefault();
-    let size = $("#pizzaSize").val();
-    let toppings = $("#pizzaToppings").val();
     let newOrder = new Pizza();
-    Pizza.sizePrice(size);
-    Pizza.toppingsPrice(toppings);
-    let orderTotalPrice = newOrder.total();
+    let size = $("#pizzaSize").val();
+    let toppings = $("#toppings").val();
+    newOrder.sizePrice(size);
+    orderTotalPrice = newOrder.total();
+    
     $("#order-output").text(orderTotalPrice);
-    });
+  });
   })
-})
