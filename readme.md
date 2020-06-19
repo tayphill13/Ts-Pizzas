@@ -1,12 +1,12 @@
-# _Project Title_
+# _T's Pizza Parlor_
 
-#### _Description, Date_
+#### _This is an application demonstrating use of objects and constructors, 6.19.20_
 
 #### By _**Taylor Phillips**_
 
 ## Description
 
-_Detailed description of the application_
+_This is an application where the user can build a pizza by choosing their toppings and size.  When the user submits their order, it will return the price and type of pizza they have ordered.  This project was meant to demonstrate our use of objects, constructors and writing specs._
 
 ## Setup/Installation Requirements
 
