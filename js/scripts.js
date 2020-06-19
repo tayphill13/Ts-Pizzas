@@ -3,14 +3,20 @@ function Pizza()  {
   this.price = 0;
 }
 Pizza.prototype.sizePrice = function(size) {
-  if  (size == "small")  {
+  if  (size === "small")  {
     this.price += 6;
-  }
-  console.log(this.price);
+  } else if (size === "medium") {
+    this.price += 8;
+  } else if (size === "large")  {
+    this.price += 10;
+  } return this.price;
 }
+
 Pizza.prototype.toppingsPrice = function(toppings) {
-  if (toppings == "3")  {
-    this.price += 3;
+  if (toppings === "pepperoni" && toppings === "pineapple")  {
+    this.price += 4;
+  } else if (toppings === "pepperoni" || toppings === "pineapple")  {
+    this.price += 2;
   }
   console.log(this.price);
 }
