@@ -7,6 +7,11 @@ PizzaOrder.prototype.sizePrice = function(size) {
     this.price += 6;
   }
 }
+PizzaOrder.prototype.toppingPrice = function(topping) {
+  if (topping === "pepperoni")  {
+    this.price += 3;
+  }
+}
 PizzaOrder.prototype.total = function() {
   let total = this.price;
   return total;
@@ -23,6 +28,6 @@ $(document).ready(function()  {
     let newOrder = new PizzaOrder();
 
     let orderTotalPrice = newOrder.total();
-    $("#order-output").text(orderTotalPrice);
+    $("#order-output").text("Order UP!");
   })
 })
