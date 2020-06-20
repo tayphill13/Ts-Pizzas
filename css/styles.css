@@ -23,6 +23,7 @@ h3  {
   text-shadow:  2px 2px 8px rgb(32, 32, 32);
 }
 .form-group {
+  font-size: 2em;
   color: black;
   text-shadow:  2px 2px 8px rgb(252, 250, 250);
 }
