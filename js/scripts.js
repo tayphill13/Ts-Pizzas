@@ -10,7 +10,7 @@ Pizza.prototype.sizePrice = function(size) {
   } else if (size === "large")  {
     this.price += 10;
   } 
-  return this.price;
+  return this.price -= 6;
 }
 
 Pizza.prototype.toppingsPrice = function(toppings) {
