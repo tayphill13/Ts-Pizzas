@@ -32,7 +32,7 @@ _This is an application where the user can build a pizza by choosing their toppi
 
 ## Known Bugs
 
-_The price for the size of pizza is not coming back as the expected value-- although still reasonably priced_
+_There are currently no known bugs, please report them to me through github_
 
 ## Support and contact details
 
