@@ -1,6 +1,6 @@
 # _T's Pizza Parlor_
 
-#### _This is an application demonstrating use of objects and constructors, 6.19.20_
+#### _This is an application that simulates ordering pizza, 6.19.20_
 
 #### By _**Taylor Phillips**_
 

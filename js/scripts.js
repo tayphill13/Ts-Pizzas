@@ -10,7 +10,7 @@ Pizza.prototype.sizePrice = function(size) {
   } else if (size === "large")  {
     this.price += 10;
   } 
-  return this.price -= 6;
+  return this.price;
 }
 
 Pizza.prototype.toppingsPrice = function(toppings) {
@@ -35,18 +35,12 @@ $(document).ready(function()  {
     event.preventDefault();
     let newOrder = new Pizza();
     let size = $("#pizzaSize").val();
-    let pepperoniTopping = $("#pepperoni").val();
-    let pineappleTopping = $("#pineapple").val();
-    let peppersTopping = $("#peppers").val();
     newOrder.sizePrice(size);
     $("input:checkbox[name=toppings]:checked").each(function() {
       let addedToppings = $(this).val();
       newOrder.toppingsPrice(addedToppings);
     });
-    newOrder.toppingsPrice(pepperoniTopping);
-    newOrder.toppingsPrice(pineappleTopping);
-    newOrder.toppingsPrice(peppersTopping);
     orderTotalPrice = newOrder.total();
     $("#order-output").text("$" + orderTotalPrice + " " + size + " pizza is hot and ready!");
   });
-  })
+})
