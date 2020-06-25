@@ -25,8 +25,8 @@ h3  {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   font-size: 1.6em;
-  color: black;
-  text-shadow:  2px 2px 8px rgb(255, 255, 255);
+  color: whitesmoke;
+  text-shadow:  2px 2px 8px rgb(0, 0, 0);
 }
 button  {
   box-shadow: 1px 2px 3px rgb(85, 85, 85);
