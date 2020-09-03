@@ -8,6 +8,8 @@
 
 _This is an application where the user can build a pizza by choosing their toppings and size.  When the user submits their order, it will return the price of the pizza they have ordered.  This project was meant to demonstrate our use of objects, constructors and writing specs._
 
+See the page deployed here:  https://tayphill13.github.io/Ts-Pizzas/
+
 ## Setup/Installation Requirements
 
 * _Install Git Bash_
